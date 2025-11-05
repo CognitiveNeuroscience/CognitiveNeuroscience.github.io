@@ -2,9 +2,9 @@
 
 A  project website for the Cognitive Neuroscience GUI project, hosted on GitHub Pages.
 
-## 🌐 Live Website
+## Live Website
 
-This site is live at [cognitiveneuroscience.github.io]`https://cognitiveneuroscience.github.io/`
+This site is live at [cognitiveneuroscience.github.io](https://cognitiveneuroscience.github.io/)
 
 ## Pages
 
@@ -14,7 +14,7 @@ This site is live at [cognitiveneuroscience.github.io]`https://cognitiveneurosci
 
 ## Deploying to GitHub Pages
 
-### Option 1: Deploy from Main Branch (Recommended)
+### Deploy from Main Branch
 
 1. Merge this PR to the `main` branch
 2. Go to your repository settings: `Settings` → `Pages`
@@ -23,9 +23,9 @@ This site is live at [cognitiveneuroscience.github.io]`https://cognitiveneurosci
    - Folder: `/ (root)`
 4. Click "Save"
 5. GitHub will automatically build and deploy your site
-6. Your site will be live at `https://cognitiveneuroscience.github.io/`
+6. Your site will be live at [https://cognitiveneuroscience.github.io/](https://cognitiveneuroscience.github.io/)
 
-## 📝 Local Development
+## Local Development
 
 To test the website locally:
 
