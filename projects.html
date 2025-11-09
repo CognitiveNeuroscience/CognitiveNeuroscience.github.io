@@ -22,21 +22,113 @@
     <main>
         <section class="content">
             <h2>Our Projects</h2>
-            <p>Currently, the GUI focuses on two main cognitive tasks:</p>
+            <p>Our GUI system guides users through cognitive neuroscience tests with an intuitive workflow. Below is the complete user journey from start to finish, along with details about each cognitive task.</p>
+        </section>
+
+        <section class="content">
+            <h2>User Flow</h2>
+            <p>The interface follows a simple, three-step process:</p>
             
             <div class="project-card">
-                <h3>N-Back Test</h3>
-                <p>A working memory experiment using a series of flashcards. Participants indicate matches from N steps back. (Images will be added later.)</p>
+                <h3>Step 1: Homepage - Get Started</h3>
+                <p>When users first launch the application, they see a clean welcome screen with the "Cognitive Neuroscience" title and a prominent "Get Started" button.</p>
+                
+                <div class="projects-media">
+                    <figure>
+                        <img src="images/homepage.png" alt="Homepage with Get Started button">
+                    </figure>
+                </div>
+                
             </div>
 
             <div class="project-card">
-                <h3>Go/No-Go Test</h3>
-                <p>A response inhibition task with multiple difficulty levels, designed to measure cognitive control. (More details coming soon.)</p>
+                <h3>Step 2: Task Selection</h3>
+                <p>After clicking "Get Started," users choose between two cognitive tasks: N-Back (working memory) or Go/No-Go (response inhibition).</p>
+                
+                <div class="projects-media">
+                    <figure>
+                        <img src="images/task_selection.png" alt="Task selection screen">
+                        <figcaption>Task Selection: Choose N-Back or Go/No-Go test</figcaption>
+                    </figure>
+                </div>
+                
+            </div>
+
+            <div class="project-card">
+                <h3>Step 3: Test Administration</h3>
+                <p>Once a task is selected, users proceed to the specific test interface with instructions and the testing environment.</p>
+            </div>
+        </section>
+
+<section class="content" id="nback-section">
+            <h2>N-Back Test (Complete)</h2>
+            <p>A working memory experiment using a series of visual stimuli (flashcards). Participants indicate when the current stimulus matches the one shown <em>N</em> items back in the sequence.</p>
+
+            <div class="instructions">
+                <strong>How it works:</strong>
+                <p>Users first see an instruction screen explaining the task and allowing them to choose difficulty (1-back, 2-back, or 3-back). Then, 15 flashcards with different object images are presented one at a time. Participants press the "Match" button when they recognize that the current image matches the one from N steps ago.</p>
+            </div>
+
+            <div class="projects-media">
+                <figure>
+                    <img src="images/nback1.png" alt="N-Back instructions screen">
+                    <figcaption>N-Back Instructions: Choose difficulty level (1-back, 2-back, 3-back) and read task instructions</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/nback2.png" alt="N-Back test interface">
+                    <figcaption>N-Back Test Interface: Visual stimulus display with "Match" button and progress tracking</figcaption>
+                </figure>
+            </div>
+
+            <div class="project-details">
+                <h4>Implementation Details</h4>
+                <ul>
+                    <li><strong>Difficulty Levels:</strong> Three levels (1-back, 2-back, 3-back) with level buttons on instructions screen</li>
+                    <li><strong>Stimulus Set:</strong> 15 unique flashcard images featuring everyday objects</li>
+                    <li><strong>Test Length:</strong> Full session of 15 trials per run</li>
+                    <li><strong>Progress Tracking:</strong> Real-time display showing "Image X/15"</li>
+                    <li><strong>User Interface:</strong> Clean card-based design with large, clear "Match" button</li>
+                </ul>
+            </div>
+
+        <p><span class="status-btn active">✅ Fully Functional</span></p>
+        </section>
+
+<section class="content" id="gonogo-section">
+            <h2>Go/No-Go Test (In Development)</h2>
+            <p>A response inhibition task where participants respond to "Go" signals and withhold response to "No-Go" signals, similar to the game Simon Says.</p>
+
+            <div class="instructions">
+                <strong>Planned functionality:</strong>
+                <p>Users will see visual cues that indicate either "Go" (respond) or "No-Go" (don't respond). The task measures impulse control and the ability to inhibit automatic responses. This test will follow the same workflow pattern as N-Back, with an instruction screen followed by the testing interface.</p>
+            </div>
+
+            <div class="project-details">
+                <h4>Development Roadmap</h4>
+                <ul>
+                    <li>Design Go and No-Go visual stimuli</li>
+                    <li>Implement response timing mechanisms</li>
+                    <li>Create instruction screen similar to N-Back format</li>
+                    <li>Add difficulty levels with varying Go/No-Go ratios</li>
+                    <li>Integrate with main task selection dashboard</li>
+                    <li>Test timing precision for research standards</li>
+                </ul>
+            </div>
+
+    <p><span class="status planning">🚧 In Progress</span></p>
+        </section>
+
+        <section class="content">
+            <h2>Technical Notes</h2>
+            <div class="project-details">
+            <p>Both tests are implemented in MATLAB to ensure integrations with EEG equipment.</p>
             </div>
         </section>
     </main>
 
     <footer>
+        <p>&copy; 2025 Cognitive Neuroscience GUI Project</p>
+        <p>Elsa Wong • Phoebe Chang • Shane Baclig</p>
     </footer>
 </body>
 </html>

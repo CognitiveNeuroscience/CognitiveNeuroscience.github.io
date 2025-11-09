@@ -20,22 +20,66 @@
     </header>
 
     <main>
-        <section class="hero">
-            <h1>Welcome to the Cognitive Neuroscience GUI</h1>
-            <p>Explore our interactive cognitive task experiments designed for neuroscience research.</p>
-        </section>
+        <!-- HOME PAGE -->
+        <div id="home" class="page-section active">
+            <section class="hero">
+                <h1>Cognitive Neuroscience GUI</h1>
+                <p>Interactive cognitive task experiments designed for neuroscience research with EEG integration</p>
+            </section>
 
-        <section class="content">
-            <h2>Our Tasks</h2>
-            <p>We currently have two experimental tasks in development:</p>
-            <ul>
-                <li><strong>N-Back Test:</strong> A working memory task with a series of flashcards. Participants indicate matches from N steps back. <em>(Images coming soon)</em></li>
-                <li><strong>Go/No-Go Test:</strong> A response inhibition task with multiple difficulty levels. <em>(Details coming soon)</em></li>
-            </ul>
-        </section>
+            <section class="content">
+                <h2>Welcome</h2>
+                <p>Our team is developing a comprehensive GUI system for administering cognitive neuroscience tests. These tests are designed to study sensory processing and brain development in patient populations during EEG monitoring sessions.</p>
+                
+                <p>The interface provides a clean, intuitive way for researchers to conduct standardized cognitive assessments. Our GUI handles the visual presentation, instructions, and user interaction, ready to be integrated with EEG equipment.</p>
+
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <h4>Working Memory Assessment</h4>
+                        <p>N-Back test with multiple difficulty levels (1-back, 2-back, 3-back)</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Response Inhibition</h4>
+                        <p>Go/No-Go test for measuring impulse control (in development)</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4> Research Ready</h4>
+                        <p>Built in MATLAB for integration with EEG systems by research team</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4> User-Friendly Interface</h4>
+                        <p>Clean, accessible design for both researchers and participants</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content">
+                <h2>Select a Task</h2>
+                <p>Choose from our available cognitive tests:</p>
+                <div class="task-grid">
+                    <div class="task-card" onclick="showPage('nback')">
+                        <img src="images/flashcards.png" class="task-icon"/>
+                        <h3>N-Back Test</h3>
+                        <p class="task-description">Test working memory with a visual stimulus matching task. Choose difficulty level and track performance.</p>
+                        <!-- Rounded pill-style link that sends the user to the N-Back section on the Projects page -->
+                        <a href="projects.html#nback-section" class="status active status-link" aria-label="View N-Back details on Projects page">Active & Complete</a>
+                    </div>
+
+                    <div class="task-card">
+                        <div class="task-icon">🎯</div>
+                        <h3>Go/No-Go Test</h3>
+                        <p class="task-description">Measure response inhibition and impulse control with signal-based task.</p>
+                        <!-- Rounded pill-style link that sends the user to the Go/No-Go section on the Projects page -->
+                        <a href="projects.html#gonogo-section" class="status planning status-link" aria-label="View Go/No-Go details on Projects page">In Development</a>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>
+        <p>&copy; 2025 Cognitive Neuroscience GUI Project</p>
+        <p>Elsa Wong • Phoebe Chang • Shane Baclig</p>
     </footer>
 </body>
 </html>
