@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Cognitive Neuroscience GUI Projects">
     <title>Projects - Cognitive Neuroscience GUI</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
     <header>
@@ -60,7 +60,7 @@
             </div>
         </section>
 
-<section class="content" id="nback-section">
+        <section class="content" id="nback-section">
             <h2>N-Back Test (Complete)</h2>
             <p>A working memory experiment using a series of visual stimuli (flashcards). Participants indicate when the current stimulus matches the one shown <em>N</em> items back in the sequence.</p>
 
@@ -91,37 +91,47 @@
                 </ul>
             </div>
 
-        <p><span class="status-btn active">✅ Fully Functional</span></p>
+            <p><span class="status-btn active">✅ Fully Functional</span></p>
         </section>
 
-<section class="content" id="gonogo-section">
-            <h2>Go/No-Go Test (In Development)</h2>
-            <p>A response inhibition task where participants respond to "Go" signals and withhold response to "No-Go" signals, similar to the game Simon Says.</p>
+        <section class="content" id="gonogo-section">
+            <h2>Go/No-Go Test (Complete)</h2>
+            <p>A response inhibition task inspired by Simon Says, where participants type commands only when preceded by "Simon says" and withhold response when preceded by "Coach Says."</p>
 
             <div class="instructions">
-                <strong>Planned functionality:</strong>
-                <p>Users will see visual cues that indicate either "Go" (respond) or "No-Go" (don't respond). The task measures impulse control and the ability to inhibit automatic responses. This test will follow the same workflow pattern as N-Back, with an instruction screen followed by the testing interface.</p>
+                <strong>How it works:</strong>
+                <p>Users first see an instruction screen explaining the task rules. Then, text commands are presented one at a time. Participants must type the command if it starts with "Simon says" but must not type anything if it starts with "Coach says." This tests impulse control and the ability to inhibit automatic responses.</p>
+            </div>
+
+            <div class="projects-media">
+                <figure>
+                    <img src="images/gonogo1.png" alt="Go/No-Go instructions screen">
+                    <figcaption>Go/No-Go Instructions: Task rules and how to respond to "Simon says" vs "Coach says" commands</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/gonogo2.png" alt="Go/No-Go test interface">
+                    <figcaption>Go/No-Go Test Interface: Command display with text input for "Simon says" responses</figcaption>
+                </figure>
             </div>
 
             <div class="project-details">
-                <h4>Development Roadmap</h4>
+                <h4>Implementation Details</h4>
                 <ul>
-                    <li>Design Go and No-Go visual stimuli</li>
-                    <li>Implement response timing mechanisms</li>
-                    <li>Create instruction screen similar to N-Back format</li>
-                    <li>Add difficulty levels with varying Go/No-Go ratios</li>
-                    <li>Integrate with main task selection dashboard</li>
-                    <li>Test timing precision for research standards</li>
+                    <li><strong>Task Format:</strong> Simon Says style game with "Simon says" (Go) and "Coach says" (No-Go) cues</li>
+                    <li><strong>Response Method:</strong> Text input for Go trials, no response for No-Go trials</li>
+                    <li><strong>Cognitive Measure:</strong> Tests response inhibition and impulse control</li>
+                    <li><strong>User Interface:</strong> Clear command display with text input field and progress tracking</li>
+                    <li><strong>Instructions:</strong> Comprehensive instruction screen explaining game rules before test begins</li>
                 </ul>
             </div>
 
-    <p><span class="status planning">🚧 In Progress</span></p>
+            <p><span class="status-btn active">✅ Fully Functional</span></p>
         </section>
 
         <section class="content">
             <h2>Technical Notes</h2>
             <div class="project-details">
-            <p>Both tests are implemented in MATLAB to ensure integrations with EEG equipment.</p>
+                <p>Both tests are implemented in MATLAB to ensure integrations with EEG equipment.</p>
             </div>
         </section>
     </main>
